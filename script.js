@@ -24,7 +24,7 @@ const products = [
     { name: "Pink Gold Ring", price: "Contact for Price", description: "A fierce, avant-garde cuff structure highlighting the pristine white fire of raw unheated diamonds.", image: "IMG-20261001-WA4372.jpg" },
     { name: "Black Gold Bracelet", price: "Contact for Price", description: "Crisp, icy finishes framing an exquisite mosaic of pure, natural, and untouched diamond accents.", image: "IMG-20261001-WA5326 (1).jpg" },
     { name: "Pink Gold Ring", price: "Contact for Price", description: "Delicate and feminine, this sculpted rose-gold jewel gleams with the organic fire of unheated gems.", image: "IMG-20261001-WA5407.jpg" },
-    { name: "Yellow Gold Brooch", price: "$2,100 USD", description: "A graceful, curving silhouette that highlights the unmatched radiance of high-clarity unheated stones.", image: "IMG-20261001-WA0005.jpg" }
+    { name: "Yellow Gold Brooch", price: "Contact for Price", description: "A graceful, curving silhouette that highlights the unmatched radiance of high-clarity unheated stones.", image: "IMG-20261001-WA0005.jpg" }
 ];
 
 function showPage(pageName) {
