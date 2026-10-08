@@ -4,29 +4,29 @@ const products = [
     { name: "Pure 24K Pink Gold Brooch", price: "Contact for Price", description: "A delicate floral-inspired creation shaped by master artisans, sparkling with pure unheated diamond facets.", image: "IMG-20261001-WA0002.jpg" },
     { name: "Pure 24K Black Gold Brooch", price: "Contact for Price", description: "Bold, modern dark metal contrast designed to amplify the intense, fire-like brilliance of untreated gems.", image: "IMG-20261001-WA0009.jpg" },
     { name: "Pure 24K Yellow Gold Brooch", price: "$2,200 USD", description: "Classic high-lustre gold contouring wrapping organically around a shimmering cluster of raw diamond crystals.", image: "IMG-20261001-WA3294 (1).jpg" },
-    { name: "Pure 24K Yellow Gold Brooch", price: "Contact for Price", description: "A statement piece featuring rich gold undertones blanketed in a constellation of organic diamonds.", image: "IMG-20261001-WA0005.jpg" },
+    { name: "Pure 24K Yellow Gold Brooch", price: "Contact for Price", description: "A statement piece featuring rich gold undertones blanketed in a constellation of organic diamonds.", image: "IMG-20261001-WA0417.jpg" },
     { name: "Pure 24K White Gold Brooch", price: "Contact for Price", description: "Gleaming icy platinum tones housing a seamless mosaic of hand-selected, earth-born unheated stones.", image: "IMG-20261001-WA0006.jpg" },
     { name: "Pure 24K Rose Gold Brooch", price: "Contact for Price", description: "Romantic blush hues sculpted into an intricate statement jewel, glowing with natural diamond fire.", image: "IMG-20261001-WA0007.jpg" },
     { name: "Pure 24K Pink Gold Brooch", price: "Contact for Price", description: "A fluid design reflecting modern haute joaillerie trends, embedded with unheated, conflict-free brilliance.", image: "IMG-20261001-WA0008.jpg" },
     { name: "Pure 24K Black Gold Ring", price: "Contact for Price", description: "Edgy yet sophisticated black-finished framework elevating the striking purity of untouched white diamonds.", image: "IMG-20261001-WA3310.jpg" },
     { name: "Pure 24K Pink Gold Earring", price: "Contact for Price", description: "Cascading drops of brilliant white precious metal framing drop-cut natural unheated diamond clusters.", image: "IMG-20261001-WA4372.jpg" },
-    { name: "Yellow Gold Bracelets (Diamonds)", price: "Contact for Price", description: "An opulent wrap-around wristpiece gleaming with warm yellow tones and continuous raw-gem sparkle.", image: "IMG-20261001-WA0417.jpg" },
-    { name: "White Gold Earrings (Diamonds)", price: "Contact for Price", description: "Dangling contemporary geometry designed to catch the light from every angle with untouched diamonds.", image: "IMG-20261001-WA0914.jpg" },
-    { name: "White Gold Bracelet (Diamonds)", price: "Contact for Price", description: "A sleek, flexible band of cool white gold encrusted with a heavy pave of pure unheated diamonds.", image: "IMG-20261001-WA1363.jpg" },
-    { name: "Pure 24K Rose Gold Bracelet", price: "Contact for Price", description: "Warm, romantic links individually cast and polished to perfection, cradling sparkling natural gems.", image: "IMG-20261001-WA1377.jpg" },
-    { name: "Pink Gold Bracelet (Diamonds)", price: "Contact for Price", description: "A delicate yet durable statement chain glistening with rich pink gold and high-grade raw diamonds.", image: "IMG-20261001-WA1472.jpg" },
-    { name: "White Gold (Bracelet)", price: "Contact for Price", description: "Minimalist luxury defined by clean lines, pristine white metal, and a dazzling core of unheated stones.", image: "IMG-20261001-WA1567 (2).jpg" },
-    { name: "Pink Gold (Necklace)", price: "Contact for Price", description: "A breathtaking collar piece resting gracefully on the skin, anchored by a cascade of unheated diamonds.", image: "IMG-20261001-WA2469 (1).jpg" },
-    { name: "Pure 24K Black Gold Necklace", price: "Contact for Price", description: "Dramatic dark-hued links creating a striking canvas for the dazzling brilliance of raw diamond settings.", image: "IMG-20261001-WA2491.jpg" },
-    { name: "Pure 24K Black Gold Bracelet", price: "Contact for Price", description: "An imposing, modern silhouette combining blackened precious metal with pristine, natural diamond fire.", image: "IMG-20261001-WA2564 (1).jpg" },
-    { name: "Pure 24K Yellow Gold Ring", price: "Contact for Price", description: "A bold heritage band featuring traditional goldsmithing techniques and vibrant, earth-mined diamonds.", image: "IMG-20261001-WA2661.jpg" },
-    { name: "Pure 24K Yellow Gold Necklace", price: "Contact for Price", description: "An opulent statement chain that drapes fluidly, featuring a stunning centerpiece of raw unheated crystals.", image: "IMG-20261001-WA2837.jpg" },
-    { name: "Pure 24K Rose Gold Ring", price: "Contact for Price", description: "An intimate, beautifully sculpted band finished with a flush setting of untreated, sparkling diamonds.", image: "IMG-20261001-WA3294 (1).jpg" },
-    { name: "Pure 24K Pink Gold Brooch", price: "Contact for Price", description: "Intricate metalwork shaped into an artistic masterpiece, brought to life with unheated diamond brilliance.", image: "IMG-20261001-WA3310.jpg" },
-    { name: "Pure 24K White Gold Brooch", price: "Contact for Price", description: "Crisp, icy finishes framing an exquisite mosaic of pure, natural, and untouched diamond accents.", image: "IMG-20261001-WA4372.jpg" },
-    { name: "Pure 24K Rose Gold Brooch", price: "Contact for Price", description: "Delicate and feminine, this sculpted rose-gold jewel gleams with the organic fire of unheated gems.", image: "IMG-20261001-WA5326 (1).jpg" },
+    { name: "Yellow Gold Bracelets (Diamonds)", price: "Contact for Price", description: "An opulent wrap-around wristpiece gleaming with warm yellow tones and continuous raw-gem sparkle.", image: "IMG-20261001-WA0914.jpg" },
+    { name: "White Gold Earrings (Diamonds)", price: "Contact for Price", description: "Dangling contemporary geometry designed to catch the light from every angle with untouched diamonds.", image: "IMG-20261001-WA1363.jpg" },
+    { name: "White Gold Bracelet (Diamonds)", price: "Contact for Price", description: "A sleek, flexible band of cool white gold encrusted with a heavy pave of pure unheated diamonds.", image: "IMG-20261001-WA1377.jpg" },
+    { name: "Pure 24K Rose Gold Bracelet", price: "Contact for Price", description: "Warm, romantic links individually cast and polished to perfection, cradling sparkling natural gems.", image: "IMG-20261001-WA1472.jpg" },
+    { name: "Pink Gold Bracelet (Diamonds)", price: "Contact for Price", description: "A delicate yet durable statement chain glistening with rich pink gold and high-grade raw diamonds.", image: "IMG-20261001-WA1567 (2).jpg" },
+    { name: "White Gold (Bracelet)", price: "Contact for Price", description: "Minimalist luxury defined by clean lines, pristine white metal, and a dazzling core of unheated stones.", image: "IMG-20261001-WA2469 (1).jpg" },
+    { name: "Pink Gold (Necklace)", price: "Contact for Price", description: "A breathtaking collar piece resting gracefully on the skin, anchored by a cascade of unheated diamonds.", image: "IMG-20261001-WA2491.jpg" },
+    { name: "Pure 24K Black Gold Necklace", price: "Contact for Price", description: "Dramatic dark-hued links creating a striking canvas for the dazzling brilliance of raw diamond settings.", image: "IMG-20261001-WA2564 (1).jpg" },
+    { name: "Pure 24K Black Gold Bracelet", price: "Contact for Price", description: "An imposing, modern silhouette combining blackened precious metal with pristine, natural diamond fire.", image: "IMG-20261001-WA2661.jpg" },
+    { name: "Pure 24K Yellow Gold Ring", price: "Contact for Price", description: "A bold heritage band featuring traditional goldsmithing techniques and vibrant, earth-mined diamonds.", image: "IMG-20261001-WA2837.jpg" },
+    { name: "Pure 24K Yellow Gold Necklace", price: "Contact for Price", description: "An opulent statement chain that drapes fluidly, featuring a stunning centerpiece of raw unheated crystals.", image: "IMG-20261001-WA3294 (1).jpg" },
+    { name: "Pure 24K Rose Gold Ring", price: "Contact for Price", description: "An intimate, beautifully sculpted band finished with a flush setting of untreated, sparkling diamonds.", image: "IMG-20261001-WA3310.jpg" },
+    { name: "Pure 24K Pink Gold Brooch", price: "Contact for Price", description: "Intricate metalwork shaped into an artistic masterpiece, brought to life with unheated diamond brilliance.", image: "IMG-20261001-WA4372.jpg" },
+    { name: "Pure 24K White Gold Brooch", price: "Contact for Price", description: "Crisp, icy finishes framing an exquisite mosaic of pure, natural, and untouched diamond accents.", image: "IMG-20261001-WA5326 (1).jpg" },
+    { name: "Pure 24K Rose Gold Brooch", price: "Contact for Price", description: "Delicate and feminine, this sculpted rose-gold jewel gleams with the organic fire of unheated gems.", image: "IMG-20261001-WA5407.jpg" },
     { name: "Pure 24K Black Gold Bracelet", price: "Contact for Price", description: "A fierce, avant-garde cuff structure highlighting the pristine white fire of raw unheated diamonds.", image: "IMG-20261001-WA5407.jpg" },
-    { name: "Pure 24K Pink Gold Ring", price: "$2,100 USD", description: "A graceful, curving silhouette that highlights the unmatched radiance of high-clarity unheated stones.", image: "IMG-20261001-WA5407.jpg" }
+    { name: "Pure 24K Pink Gold Ring", price: "$2,100 USD", description: "A graceful, curving silhouette that highlights the unmatched radiance of high-clarity unheated stones.", image: "IMG-20261001-WA0005.jpg" }
 ];
 
 function showPage(pageName) {
@@ -132,7 +132,7 @@ function submitOrder(event) {
         return;
     }
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
     if (!emailPattern.test(buyerEmail)) {
         alert('Please enter a valid email address.');
         return;
@@ -165,6 +165,47 @@ Thank you for your interest in our collection.
     closeCheckout();
 }
 
+function submitContact(event) {
+    if (event) {
+        event.preventDefault();
+    }
+
+    const contactName = document.getElementById('contact-name').value.trim();
+    const contactEmail = document.getElementById('contact-email').value.trim();
+    const contactSubject = document.getElementById('contact-subject').value.trim();
+    const contactMessage = document.getElementById('contact-message').value.trim();
+
+    if (!contactName || !contactEmail || !contactSubject || !contactMessage) {
+        alert('Please fill in all required fields.');
+        return;
+    }
+
+    const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+    if (!emailPattern.test(contactEmail)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    const successMessage = `
+✓ MESSAGE SENT SUCCESSFULLY
+
+Thank you for reaching out to Luxorita!
+
+Your inquiry details:
+Name: ${contactName}
+Email: ${contactEmail}
+Subject: ${contactSubject}
+
+We have received your message and will respond to you shortly. 
+
+Best regards,
+The Luxorita Team
+    `;
+
+    alert(successMessage);
+    document.getElementById('contact-form').reset();
+}
+
 window.onclick = function(event) {
     const modal = document.getElementById('checkout-modal');
     if (event.target === modal) {
@@ -174,5 +215,5 @@ window.onclick = function(event) {
 
 document.addEventListener('DOMContentLoaded', function() {
     renderCatalog();
-    showPage('catalog');
+    showPage('products');
 });
