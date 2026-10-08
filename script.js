@@ -1,5 +1,4 @@
 const products = [
-    [
     { name: "Pure 24K Pink Gold Brooch", price: "Contact for Price", description: "An heirloom-inspired silhouette meticulously forged and pavé-set with brilliant natural unheated diamonds.", image: "IMG-20261001-WA0000.jpg" },
     { name: "Pure 24K White Gold Brooch", price: "Contact for Price", description: "Architectural brilliance meets timeless elegance, adorned with raw, ethically sourced unheated stones.", image: "IMG-20261001-WA0001.jpg" },
     { name: "Pure 24K Pink Gold Brooch", price: "Contact for Price", description: "A delicate floral-inspired creation shaped by master artisans, sparkling with pure unheated diamond facets.", image: "IMG-20261001-WA0002.jpg" },
@@ -28,7 +27,6 @@ const products = [
     { name: "Pure 24K Rose Gold Brooch", price: "Contact for Price", description: "Delicate and feminine, this sculpted rose-gold jewel gleams with the organic fire of unheated gems.", image: "IMG-20261001-WA5326 (1).jpg" },
     { name: "Pure 24K Black Gold Bracelet", price: "Contact for Price", description: "A fierce, avant-garde cuff structure highlighting the pristine white fire of raw unheated diamonds.", image: "IMG-20261001-WA5407.jpg" },
     { name: "Pure 24K Pink Gold Ring", price: "$2,100 USD", description: "A graceful, curving silhouette that highlights the unmatched radiance of high-clarity unheated stones.", image: "IMG-20261001-WA5407.jpg" }
-    ]
 ];
 
 function showPage(pageName) {
