@@ -115,12 +115,25 @@ img {
     display: block;
 }
 
-.content-section {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 0 1rem 2rem;
+.seo-intro,
+.features-section,
+.faq-section {
+    max-width: 1100px;
+    margin: 0 auto 3.5rem;
+    padding: 0 1rem;
 }
 
+.eyebrow {
+    color: var(--gold-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.seo-intro h2,
+.features-section h2,
+.faq-section h2,
 .content-section h2 {
     font-family: var(--font-decorative);
     color: var(--gold-light);
@@ -129,11 +142,49 @@ img {
     letter-spacing: 0.08em;
 }
 
-.content-section p {
+.seo-intro p,
+.content-section p,
+.faq-item p,
+.info-card p {
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: 1.08rem;
     line-height: 1.8;
     margin-bottom: 1rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.info-card,
+.faq-item {
+    background: rgba(20, 18, 15, 0.92);
+    border: 1px solid var(--border-vintage);
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+}
+
+.info-card h3,
+.faq-item h3 {
+    font-family: var(--font-decorative);
+    color: var(--gold-light);
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.04em;
+}
+
+.faq-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.content-section {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
 }
 
 .product-grid {
@@ -317,6 +368,12 @@ img {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+@media (max-width: 900px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 640px) {
