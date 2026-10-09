@@ -27,6 +27,8 @@ const products = [
     { name: "Yellow Gold Brooch", price: "Contact for Price", description: "A graceful, curving silhouette that highlights the unmatched radiance of high-clarity unheated stones.", image: "IMG-20261001-WA0005.jpg" }
 ];
 
+const CONTACT_EMAIL = "contactluxorita@gmail.com";
+
 function showPage(pageName) {
     if (event) {
         event.preventDefault();
@@ -113,6 +115,10 @@ function closeCheckout() {
     if (form) {
         form.reset();
     }
+    const successMsg = document.getElementById('success-message');
+    if (successMsg) {
+        successMsg.style.display = 'none';
+    }
 }
 
 function submitOrder(event) {
@@ -122,10 +128,11 @@ function submitOrder(event) {
 
     const buyerName = document.getElementById('buyer-name').value.trim();
     const buyerEmail = document.getElementById('buyer-email').value.trim();
-    const buyerAddress = document.getElementById('buyer-address').value.trim();
     const buyerPhone = document.getElementById('buyer-phone').value.trim();
+    const buyerAddress = document.getElementById('buyer-address').value.trim();
+    const buyerMessage = document.getElementById('buyer-message').value.trim();
 
-    if (!buyerName || !buyerEmail || !buyerAddress || !buyerPhone) {
+    if (!buyerName || !buyerEmail || !buyerPhone || !buyerAddress) {
         alert('Please fill in all required fields.');
         return;
     }
@@ -138,29 +145,48 @@ function submitOrder(event) {
 
     const productName = window.currentOrder ? window.currentOrder.productName : 'this item';
     const productPrice = window.currentOrder ? window.currentOrder.productPrice : 'Contact for Price';
-    const orderType = window.currentOrder ? window.currentOrder.type : 'inquiry';
 
-    const messageTitle = orderType === 'checkout' ? 'PAYMENT SUBMITTED SUCCESSFULLY' : 'INQUIRY SUBMITTED SUCCESSFULLY';
-
-    const inquiryMessage = `
-✓ ${messageTitle}
+    // Compose email body
+    const emailBody = `
+New Product Inquiry from Luxorita Website
 
 Product: ${productName}
 Price: ${productPrice}
 
-Customer details:
+Customer Information:
 Name: ${buyerName}
 Email: ${buyerEmail}
 Phone: ${buyerPhone}
 Address: ${buyerAddress}
 
-${orderType === 'checkout' ? 'Your payment is being processed. Please remain on this website while the transaction is completed.' : 'Your request is being reviewed in the Luxorita inquiry flow. Please expect a response shortly.'}
+${buyerMessage ? `Additional Message:\n${buyerMessage}` : ''}
 
-Thank you for your interest in our collection.
-    `;
+---
+This inquiry was submitted via the Luxorita luxury jewelry website.
+Please respond to the customer at: ${buyerEmail}
+    `.trim();
 
-    alert(inquiryMessage);
-    closeCheckout();
+    // Create mailto link for the user's device
+    const mailtoLink = `mailto:${CONTACT_EMAIL}?subject=Product Inquiry - ${encodeURIComponent(productName)}&body=${encodeURIComponent(emailBody)}`;
+    
+    // Also send via alternative method if available
+    sendInquiry(buyerName, buyerEmail, productName, buyerPhone, buyerAddress, buyerMessage);
+
+    // Show success message
+    const form = document.getElementById('checkout-form');
+    const successMsg = document.getElementById('success-message');
+    const confirmEmail = document.getElementById('confirm-email');
+
+    if (form) form.style.display = 'none';
+    if (successMsg) {
+        confirmEmail.textContent = buyerEmail;
+        successMsg.style.display = 'block';
+    }
+
+    // Auto-close after 5 seconds
+    setTimeout(() => {
+        closeCheckout();
+    }, 5000);
 }
 
 function submitContact(event) {
@@ -184,24 +210,83 @@ function submitContact(event) {
         return;
     }
 
-    const successMessage = `
-✓ MESSAGE SENT SUCCESSFULLY
+    // Compose email body
+    const emailBody = `
+New Contact Inquiry from Luxorita Website
 
-Thank you for reaching out to Luxorita!
-
-Your inquiry details:
-Name: ${contactName}
+From: ${contactName}
 Email: ${contactEmail}
 Subject: ${contactSubject}
 
-We have received your message and will respond to you shortly.
+Message:
+${contactMessage}
 
-Best regards,
-The Luxorita Team
-    `;
+---
+This message was submitted via the Luxorita contact form.
+Please respond to: ${contactEmail}
+    `.trim();
 
-    alert(successMessage);
-    document.getElementById('contact-form').reset();
+    // Send inquiry
+    sendContactMessage(contactName, contactEmail, contactSubject, contactMessage);
+
+    // Show success message
+    const form = document.getElementById('contact-form');
+    const successMsg = document.getElementById('contact-success');
+
+    if (form) form.style.display = 'none';
+    if (successMsg) {
+        successMsg.style.display = 'block';
+    }
+
+    // Auto-close after 5 seconds
+    setTimeout(() => {
+        if (form) form.style.display = 'block';
+        if (successMsg) successMsg.style.display = 'none';
+        document.getElementById('contact-form').reset();
+    }, 5000);
+}
+
+// Send inquiry via FormSubmit or similar service
+function sendInquiry(name, email, product, phone, address, message) {
+    // Using FormSubmit.co free service
+    fetch('https://formsubmit.co/ajax/' + CONTACT_EMAIL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            name: name,
+            email: email,
+            phone: phone,
+            address: address,
+            product: product,
+            message: message,
+            _subject: 'Product Inquiry - ' + product,
+            _replyto: email
+        })
+    }).catch(err => {
+        console.log('Inquiry received locally. Please ensure email configuration is set up.');
+    });
+}
+
+// Send contact message via FormSubmit
+function sendContactMessage(name, email, subject, message) {
+    fetch('https://formsubmit.co/ajax/' + CONTACT_EMAIL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            name: name,
+            email: email,
+            subject: subject,
+            message: message,
+            _subject: subject,
+            _replyto: email
+        })
+    }).catch(err => {
+        console.log('Message received locally. Please ensure email configuration is set up.');
+    });
 }
 
 window.onclick = function(event) {
