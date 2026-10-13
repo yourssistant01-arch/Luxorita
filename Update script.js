@@ -18,3 +18,13 @@ https://luxorita.store/-delicate-layered-gold-necklace.md
 https://luxorita.store/-bespoke-engraved-medallion-necklace.md
 https://luxorita.store/-bridal-heirloom-necklace.md
 https://luxorita.store/-contemporary-geometric-neck-jewel.md
+https://luxorita.store/-luxury-yellow-gold-cocktail-ring
+https://luxorita.store/-timeless-white-gold-eternity-ring
+https://luxorita.store/-sculptural-pink-gold-statement-ring
+https://luxorita.store/-vintage-inspired-sapphire-ring
+https://luxorita.store/-modern-geometric-gold-band
+https://luxorita.store/-art-deco-diamond-solitaire
+https://luxorita.store/-delicate-stackable-gold-ring
+https://luxorita.store/-bespoke-engraved-signet-ring
+https://luxorita.store/-bridal-heirloom-engagement-ring
+https://luxorita.store/-contemporary-two-tone-sculptural-ring
