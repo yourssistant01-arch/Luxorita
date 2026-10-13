@@ -8,3 +8,13 @@ https://luxorita.store/-delicate-pearl-chain-bracelet.md
 https://luxorita.store/-bespoke-engraved-gold-bangle.md
 https://luxorita.store/-bridal-heirloom-bracelet.md
 https://luxorita.store/-contemporary-two-tone-wrist-jewel.md
+https://luxorita.store/-haute-joaillerie-yellow-gold-necklace.md
+https://luxorita.store/-modern-white-gold-pendant-necklace.md
+https://luxorita.store/-sculptural-pink-gold-choker.md
+https://luxorita.store/-vintage-inspired-pearl-sautoir.md
+https://luxorita.store/-floral-diamond-statement-necklace.md
+https://luxorita.store/-art-deco-gemstone-collar.md
+https://luxorita.store/-delicate-layered-gold-necklace.md
+https://luxorita.store/-bespoke-engraved-medallion-necklace.md
+https://luxorita.store/-bridal-heirloom-necklace.md
+https://luxorita.store/-contemporary-geometric-neck-jewel.md
